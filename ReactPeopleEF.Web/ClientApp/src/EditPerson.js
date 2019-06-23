@@ -3,7 +3,7 @@ import axios from 'axios';
 import PersonForm from './PersonForm';
 import { produce } from 'immer';
 
-export default class EditPage extends React.Component
+export default class EditPerson extends React.Component
 {
 
     state = {
@@ -57,9 +57,10 @@ export default class EditPage extends React.Component
             lastName,
             age
         } = this.state.person;
-        let content;
+        let pageContent;
+
         if (firstName) {
-            content = <PersonForm
+            pageContent = <PersonForm
                 firstName={firstName}
                 lastName={lastName}
                 age={age}
@@ -68,7 +69,7 @@ export default class EditPage extends React.Component
             />
         }
         else {
-            content = (
+            pageContent = (
                 <div className="row">
                     <div className="col-md-6 col-md-offset-3 well">
                         <select className="form-control" onChange={this.onSelectChange}>
@@ -84,7 +85,7 @@ export default class EditPage extends React.Component
         return (
             <div>
                 <h1>Edit person</h1>
-                {content}
+                {pageContent}
             </div>
         )
     }

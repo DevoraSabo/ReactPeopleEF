@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 
-const PersonForm = ({ firstName, lastName, age, onInputChange, onAddClick }) => {
+const PersonForm = ({ firstName, lastName, age, onInputChange, onSubmit }) => {
     return(
         <div className= "col-md-6 col-md-offset-3 well">
             <div className="col-md-3">
@@ -13,7 +13,7 @@ const PersonForm = ({ firstName, lastName, age, onInputChange, onAddClick }) => 
                 <input name="age" value={age} onChange={onInputChange} className="form-control" placeholder="Age" />
             </div>
             <div className="col-md-3">
-                <button className="btn btn-primary" onClick={onAddClick}>Add</button>
+                <button className="btn btn-primary" onClick={onSubmit}>Submit</button>
             </div>
           </div >
     );

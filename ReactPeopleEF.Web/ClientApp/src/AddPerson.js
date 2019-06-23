@@ -21,7 +21,7 @@ class AddPerson extends React.Component {
         this.setState(newState);
     }
 
-    onAddClick = () => {
+    onSubmit = () => {
         axios.post('/api/people/add', this.state.person).then(() => {
             this.props.history.push('/');
 
@@ -55,7 +55,7 @@ class AddPerson extends React.Component {
                     lastName={lastName}
                     age={age}
                     onInputChange={this.onInputChange}
-                    onAddClick={this.onAddClick}
+                    onSubmit={this.onSubmit}
                 />
             </div>);
     }
