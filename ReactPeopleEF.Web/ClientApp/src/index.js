@@ -2,8 +2,6 @@
 import { render } from 'react-dom';
 import PeoplePage from './PeoplePage';
 import { BrowserRouter, Route, Link, withRouter } from 'react-router-dom';
-import RedirectDemo from './RedirectDemo';
-import ParameterDemo from './ParameterDemo';
 import AddPerson from './AddPerson';
 
 
@@ -22,7 +20,6 @@ class App extends React.Component {
                 <Route exact path='/' component={PeoplePage} />
                 <Route exact path='/people' component={PeoplePage} />
                 <Route path='/addperson' component={AddPerson} />
-                //<Route exact path='/parameterdemo/:id/:foo?' component={ParameterDemo} />
             </div>
         );
     }
