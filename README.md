@@ -8,9 +8,9 @@ Features:
 
   2. Select All - with the click of just one button, all people in the database are checked, and users can see fit to use any other functionality on all information at once.
 
+  3. Clear All - users can clear all selection checked off if they have selected incorrectly, before applying the features.
+  
   3. Delete - when this button is clicked, all people with checked checkboxes will be cleared from the database. The application will not refresh; the updated database is immediately incorporated into the page in real time.
-
-  4. Clear All - users can delete all information stored in the database and start anew.
 
 Coming soon:
 
