@@ -16,11 +16,11 @@ Coming soon:
 
   1. Edit - when a person is selected, you can edit that particular person's information directly to the database. When submit is clicked, changes are saved to the application with virtually no delay and the page will not refresh - the updates will show immediately.
   
-  2.Edit 2 - if a user clicks update without selecting a person first, he can choose a person to edit from the dropdown list shown. Then, he can edit to his heart's content, and changes will update on the page that same second.
+  2. Edit #2 - if a user clicks update without selecting a person first, he can choose a person to edit from the dropdown list shown. Then, he can edit to his heart's content, and changes will update on the page that same second.
 
 Technologies Utilized:
 
-ASP.NET MVC
-Entity Framework Core
-React, Axios, React Router
+- ASP.NET MVC
+- Entity Framework Core
+- React, Axios, React Router
 
