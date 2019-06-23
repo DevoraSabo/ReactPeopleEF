@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter, Route, Link, withRouter } from 'react-router-dom';
+
 
 export default function PersonRow({ person, onDeleteCheckChanged }) {
     return (
@@ -7,6 +9,11 @@ export default function PersonRow({ person, onDeleteCheckChanged }) {
             <td>{person.firstName}</td>
             <td>{person.lastName}</td>
             <td>{person.age}</td>
+            <td>
+                <Link to={`/editperson/${person.id}`}>
+                    <button className='btn btn-warning'>Edit</button>
+                </Link>
+            </td>
         </tr>
     )
 }

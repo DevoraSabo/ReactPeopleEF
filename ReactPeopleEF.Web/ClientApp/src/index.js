@@ -21,7 +21,7 @@ class App extends React.Component {
                 <Route exact path='/' component={PeoplePage} />
                 <Route exact path='/people' component={PeoplePage} />
                 <Route path='/addperson' component={AddPerson} />
-                <Route path='/editperson' component={EditPerson} />
+                <Route path='/editperson/:personid?' component={EditPerson} />
 
             </div>
         );
