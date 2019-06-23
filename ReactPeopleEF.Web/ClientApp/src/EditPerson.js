@@ -16,14 +16,14 @@ export default class EditPerson extends React.Component
     }
 
     componentDidMount = () => {
-        if (this.props.match.params.personId) {
-            axios.get(`/api/people/getbyid/{this.props.match.params.personId}`)
+        if (this.props.match.params.personid) {
+            axios.get(`/api/people/getbyid/${this.props.match.params.personid}`)
                 .then(({ data }) => {
                     this.setState({ person: data })
                 });
         } else {
             axios.get(`api/people/getall`).then(({ data }) => {
-                this.setState({ person: data })
+                this.setState({ people: data })
             });
         }
 
