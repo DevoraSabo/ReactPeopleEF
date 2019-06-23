@@ -29,6 +29,14 @@ namespace ReactPeopleEF.Web.Controllers
             return repo.GetPeople();
         }
 
+        [HttpGet]
+        [Route("getbyid/{id}")]
+        public Person GetPersonById(int id)
+        {
+            var repo = new PeopleRepository(_connectionString);
+            return repo.GetById(id);
+        }
+
         [HttpPost]
         [Route("add")]
         public Person Add(Person person)
@@ -36,6 +44,14 @@ namespace ReactPeopleEF.Web.Controllers
             var repo = new PeopleRepository(_connectionString);
             repo.Add(person);
             return person;
+        }
+
+        [HttpPost]
+        [Route("update")]
+        public void Update(Person person)
+        {
+            var repo = new PeopleRepository(_connectionString);
+            repo.Update(person);
         }
 
         [HttpPost]

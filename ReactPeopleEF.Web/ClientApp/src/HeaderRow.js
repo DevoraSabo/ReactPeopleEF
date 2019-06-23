@@ -14,6 +14,9 @@ class HeaderRow extends React.Component {
                     <Link to='/addperson'>
                         <button className="btn btn-primary">Add Person</button>
                     </Link>
+                    <Link to='/editperson'>
+                        <button className="btn btn-primary">Edit Person</button>
+                    </Link>
                     <hr />
                 </div>
             </div>);

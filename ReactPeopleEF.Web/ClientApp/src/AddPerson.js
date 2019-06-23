@@ -22,8 +22,10 @@ class AddPerson extends React.Component {
     }
 
     onAddClick = () => {
-        axios.post('/api/people/add', this.state).then(() => {
+        axios.post('/api/people/add', this.state.person).then(() => {
             this.props.history.push('/');
+
+        
         //axios.post('/api/people/add', this.state.person).then(({ data }) => {
         //    const nextState = produce(this.state, draftState => {
         //        draftState.people.push(data);
@@ -35,6 +37,8 @@ class AddPerson extends React.Component {
         //    });
         //    this.setState(nextState);
         });
+
+        
     }
 
     render() {

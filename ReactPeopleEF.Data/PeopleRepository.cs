@@ -22,6 +22,25 @@ namespace ReactPeopleEF.Data
             }
         }
 
+        public Person GetById(int id)
+        {
+            using (var context = new PeopleContext(_connectionString))
+            {
+
+                return context.People.FirstOrDefault(p => p.Id == id);
+            }
+        }
+
+        public void Update(Person person)
+        {
+            using (var context = new PeopleContext(_connectionString))
+            {
+                context.People.Attach(person);
+                context.Entry(person).State = EntityState.Modified;
+                context.SaveChanges();
+            }
+        }
+
         public void Add(Person person)
         {
             using (var context = new PeopleContext(_connectionString))
