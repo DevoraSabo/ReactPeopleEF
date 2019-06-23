@@ -12,7 +12,7 @@ Features:
   
   3. Delete - when this button is clicked, all people with checked checkboxes will be cleared from the database. The application will not refresh; the updated database is immediately incorporated into the page in real time.
 
-Coming soon:
+Additional Features Added:
 
   1. Edit - when a person is selected, you can edit that particular person's information directly to the database. When submit is clicked, changes are saved to the application with virtually no delay and the page will not refresh - the updates will show immediately.
   
